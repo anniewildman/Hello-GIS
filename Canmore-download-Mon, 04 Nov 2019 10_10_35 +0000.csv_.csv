@@ -1,0 +1,29 @@
+Unless stated otherwise the Canmore dataset contains Ordnance Survey derived data which is delivered through Canmore website under the terms of the OPEN GOVERNMENT End User Licence.,,,,,,,,,,
+http://www.ordnancesurvey.co.uk/docs/licences/os-opendata-licence.pdf,,,,,,,,,,
+"Canmore-download-Mon, 04 Nov 2019 10:10:35 +0000.csv",,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+CANMORE ID,SITE NUMBER,SITE NAME,SITE TYPE,SITE EASTING,SITE NORTHING,COUNCIL,COUNTY,PARISH,NGR,URL
+40291,NS05SE 4,"Bute, Dunagoil","Fort (Prehistoric), Axehead (Stone), Mould (Clay), Ring (Bronze)",208479,653127,ARGYLL AND BUTE,BUTESHIRE,KINGARTH,NS 08479 53127,http://canmore.org.uk/site/40291
+23082,NM84SE 1,"Lismore, Tirefour Castle",Broch (Iron Age),186755,742912,ARGYLL AND BUTE,ARGYLL,LISMORE AND APPIN (ARGYLL AND BUTE),NM 86755 42912,http://canmore.org.uk/site/23082
+21997,NM42NW 1,"Burg, Dun Bhuirg, Mull","Broch (Iron Age)(Possible), Dun (Period Unassigned)",142170,726240,ARGYLL AND BUTE,ARGYLL,KILFINICHEN AND KILVICKEON,NM 4217 2624,http://canmore.org.uk/site/21997
+39160,NR79SE 1,Druim An Duin,Dun (Period Unassigned),178110,691300,ARGYLL AND BUTE,ARGYLL,NORTH KNAPDALE,NR 7811 9130,http://canmore.org.uk/site/39160
+39349,NR86SW 4,Dun A' Choin Duibh,Dun (Prehistoric),180430,664070,ARGYLL AND BUTE,ARGYLL,SOUTH KNAPDALE,NR 8043 6407,http://canmore.org.uk/site/39349
+42841,NS43SE 5,Lochlea,"Crannog (Period Unassigned), Armlet, Bead, Bowl(S), Finger Ring, Oar(S), Paddle(S), Polished Axehead, Unidentified Pottery (Roman), Boat, Logboat(S)",245750,630270,SOUTH AYRSHIRE,AYRSHIRE,TARBOLTON,NS 4575 3027,http://canmore.org.uk/site/42841
+281512,NS38NE 71,"Loch Lomond, Midross, Boiden 1","Cemetery (Period Unassigned), Enclosure (Period Unassigned), Pit(S) (Period Unassigned)",235600,686000,ARGYLL AND BUTE,DUNBARTONSHIRE,LUSS,NS 356 860,http://canmore.org.uk/site/281512
+21537,NM04SW 2,"Tiree, Dun Heanish","Broch (Iron Age)(Possible), Dun (Period Unassigned)",103900,743360,ARGYLL AND BUTE,ARGYLL,TIREE,NM 0390 4336,http://canmore.org.uk/site/21537
+21806,NM34NE 7,"Allt Dubhaig, Mull","Cave(S) (Period Unassigned), Midden (Period Unassigned), Unidentified Pottery (Iron Age)",136340,745640,ARGYLL AND BUTE,ARGYLL,KILNINIAN AND KILMORE,NM 3634 4564,http://canmore.org.uk/site/21806
+22775,NM80SE 18,"Ederline, Loch Awe",Crannog (Period Unassigned),188210,703940,ARGYLL AND BUTE,ARGYLL,KILMICHAEL GLASSARY,NM 8821 0394,http://canmore.org.uk/site/22775
+22835,NM80SW 2,Carnassarie Castle,Tower House (Medieval),183908,700848,ARGYLL AND BUTE,ARGYLL,KILMARTIN,NM 83908 00848,http://canmore.org.uk/site/22835
+38173,NR49NW 14,"Colonsay, Kiloran Bay","Inhumation (Period Unassigned), Ship Burial (Viking)",140080,697640,ARGYLL AND BUTE,ARGYLL,COLONSAY AND ORONSAY,NR 4008 9764,http://canmore.org.uk/site/38173
+38807,NR72SW 25,Knock Scalbart,Fort (Period Unassigned),173020,622220,ARGYLL AND BUTE,ARGYLL,CAMPBELTOWN,NR 7302 2222,http://canmore.org.uk/site/38807
+40242,NS05NE 2,"Bute, Ardnahoe","Fort (Iron Age), Rig And Furrow (Medieval)",206636,657440,ARGYLL AND BUTE,BUTESHIRE,KINGARTH,NS 06636 57440,http://canmore.org.uk/site/40242
+40261,NS05NW 10,"Inchmarnock, Midpark","Findspot, Polished Axehead(S) (Stone), Unidentified Flint(S) (Flint), Unidentified Pottery (Iron Age)",202200,659500,ARGYLL AND BUTE,BUTESHIRE,NORTH BUTE,NS 022 595,http://canmore.org.uk/site/40261
+40300,NS06NE 11,"Bute, Dun Burgidale","Galleried Dun (Iron Age), Military Training Site (19-20th Century)",206277,666051,ARGYLL AND BUTE,BUTESHIRE,NORTH BUTE,NS 06277 66051,http://canmore.org.uk/site/40300
+40411,NS06SE 44,Bute,"Findspot, Die(S) (Bone)",200000,660000,ARGYLL AND BUTE,BUTESHIRE,ROTHESAY,NS 0 6,http://canmore.org.uk/site/40411
+40678,NS15SW 13,"Bute, Glen Callum","Building (Period Unassigned), Corn Drying Kiln (Period Unassigned), Farmstead (Period Unassigned), Field System (Period Unassigned), Hut Circle (Prehistoric), Rig And Furrow (Medieval)",210310,653470,ARGYLL AND BUTE,BUTESHIRE,KINGARTH,NS 10310 53470,http://canmore.org.uk/site/40678
+281440,NM04NE 33,Tiree,"Ditch (Period Unassigned), Midden (Period Unassigned), Wall (Period Unassigned), Animal Remains(S), Unidentified Flint (Flint), Unidentified Pottery(S) (Iron Age)",106666,748839,ARGYLL AND BUTE,ARGYLL,TIREE,NM 06666 48839,http://canmore.org.uk/site/281440
+300171,NS05NW 35,"Inchmarnock, Southpark",Rock Shelter (Iron Age),202023,658333,ARGYLL AND BUTE,BUTESHIRE,NORTH BUTE,NS 02023 58333,http://canmore.org.uk/site/300171
+300178,NS05NW 42,"Inchmarnock, Southpark",Rock Shelter (Iron Age),202196,658325,ARGYLL AND BUTE,BUTESHIRE,NORTH BUTE,NS 02196 58325,http://canmore.org.uk/site/300178
+312124,NR89NW 191,Killinochonoch,"Hearth(S) (Period Unassigned)(Possible), Post Hole(S) (Period Unassigned), Roundhouse (Bronze/iron Age), Lithic Implement(S), Saddle Quern",183920,695700,ARGYLL AND BUTE,ARGYLL,KILMICHAEL GLASSARY,NR 8392 9570,http://canmore.org.uk/site/312124
+351309,NM22SE 159,"Iona, Cnoc Orain","Buried Land Surface (Iron Age), Lazy Beds (Post Medieval), Unidentified Flint",127504,723741,ARGYLL AND BUTE,ARGYLL,KILFINICHEN AND KILVICKEON,NM 27504 23741,http://canmore.org.uk/site/351309
