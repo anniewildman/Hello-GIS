@@ -1,0 +1,403 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/anniewildman/Hello-GIS/blob/master/Bute%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "CHtimzUWDbKJ",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "import pandas as pd\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "w0xefMtwDl4j",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "Bute=pd.read_csv('https://raw.githubusercontent.com/anniewildman/Hello-GIS/master/Canmore-download-Mon%2C%2004%20Nov%202019%2010_10_35%20%2B0000.csv_.csv')"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "8NRbC4HoD9RS",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 306
+        },
+        "outputId": "51830240-eae5-4735-8d18-06280d5d884d"
+      },
+      "source": [
+        "Bute.head()"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/html": [
+              "<div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>40291</th>\n",
+              "      <th>NS05SE 4</th>\n",
+              "      <th>Bute, Dunagoil</th>\n",
+              "      <th>Fort (Prehistoric), Axehead (Stone), Mould (Clay), Ring (Bronze)</th>\n",
+              "      <th>208479</th>\n",
+              "      <th>653127</th>\n",
+              "      <th>ARGYLL AND BUTE</th>\n",
+              "      <th>BUTESHIRE</th>\n",
+              "      <th>KINGARTH</th>\n",
+              "      <th>NS 08479 53127</th>\n",
+              "      <th>http://canmore.org.uk/site/40291</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>23082</td>\n",
+              "      <td>NM84SE 1</td>\n",
+              "      <td>Lismore, Tirefour Castle</td>\n",
+              "      <td>Broch (Iron Age)</td>\n",
+              "      <td>186755</td>\n",
+              "      <td>742912</td>\n",
+              "      <td>ARGYLL AND BUTE</td>\n",
+              "      <td>ARGYLL</td>\n",
+              "      <td>LISMORE AND APPIN (ARGYLL AND BUTE)</td>\n",
+              "      <td>NM 86755 42912</td>\n",
+              "      <td>http://canmore.org.uk/site/23082</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>21997</td>\n",
+              "      <td>NM42NW 1</td>\n",
+              "      <td>Burg, Dun Bhuirg, Mull</td>\n",
+              "      <td>Broch (Iron Age)(Possible), Dun (Period Unassi...</td>\n",
+              "      <td>142170</td>\n",
+              "      <td>726240</td>\n",
+              "      <td>ARGYLL AND BUTE</td>\n",
+              "      <td>ARGYLL</td>\n",
+              "      <td>KILFINICHEN AND KILVICKEON</td>\n",
+              "      <td>NM 4217 2624</td>\n",
+              "      <td>http://canmore.org.uk/site/21997</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>39160</td>\n",
+              "      <td>NR79SE 1</td>\n",
+              "      <td>Druim An Duin</td>\n",
+              "      <td>Dun (Period Unassigned)</td>\n",
+              "      <td>178110</td>\n",
+              "      <td>691300</td>\n",
+              "      <td>ARGYLL AND BUTE</td>\n",
+              "      <td>ARGYLL</td>\n",
+              "      <td>NORTH KNAPDALE</td>\n",
+              "      <td>NR 7811 9130</td>\n",
+              "      <td>http://canmore.org.uk/site/39160</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>39349</td>\n",
+              "      <td>NR86SW 4</td>\n",
+              "      <td>Dun A' Choin Duibh</td>\n",
+              "      <td>Dun (Prehistoric)</td>\n",
+              "      <td>180430</td>\n",
+              "      <td>664070</td>\n",
+              "      <td>ARGYLL AND BUTE</td>\n",
+              "      <td>ARGYLL</td>\n",
+              "      <td>SOUTH KNAPDALE</td>\n",
+              "      <td>NR 8043 6407</td>\n",
+              "      <td>http://canmore.org.uk/site/39349</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>42841</td>\n",
+              "      <td>NS43SE 5</td>\n",
+              "      <td>Lochlea</td>\n",
+              "      <td>Crannog (Period Unassigned), Armlet, Bead, Bow...</td>\n",
+              "      <td>245750</td>\n",
+              "      <td>630270</td>\n",
+              "      <td>SOUTH AYRSHIRE</td>\n",
+              "      <td>AYRSHIRE</td>\n",
+              "      <td>TARBOLTON</td>\n",
+              "      <td>NS 4575 3027</td>\n",
+              "      <td>http://canmore.org.uk/site/42841</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>"
+            ],
+            "text/plain": [
+              "   40291  NS05SE 4  ...  NS 08479 53127  http://canmore.org.uk/site/40291\n",
+              "0  23082  NM84SE 1  ...  NM 86755 42912  http://canmore.org.uk/site/23082\n",
+              "1  21997  NM42NW 1  ...    NM 4217 2624  http://canmore.org.uk/site/21997\n",
+              "2  39160  NR79SE 1  ...    NR 7811 9130  http://canmore.org.uk/site/39160\n",
+              "3  39349  NR86SW 4  ...    NR 8043 6407  http://canmore.org.uk/site/39349\n",
+              "4  42841  NS43SE 5  ...    NS 4575 3027  http://canmore.org.uk/site/42841\n",
+              "\n",
+              "[5 rows x 11 columns]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TH4QKAl5EIZT",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ws-jEcyKk0MF",
+        "colab_type": "code",
+        "outputId": "8851bb2b-89c3-4297-c826-0d0822a87f55",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        }
+      },
+      "source": [
+        "#codecell_makeabasicmap_importyourlibraries\n",
+        "import folium\n",
+        "import branca\n",
+        "import pandas as pd\n",
+        "print(folium.__file__)\n",
+        "print(folium.__version__)"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "/usr/local/lib/python3.6/dist-packages/folium/__init__.py\n",
+            "0.8.3\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "WrJDu3TyEUjK",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "F0B_wkOblGUW",
+        "colab_type": "code",
+        "outputId": "23f4cb4f-9c5d-49b3-f388-b3259c471cae",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 306
+        }
+      },
+      "source": [
+        "#codecell_makeabasicmap_GetUrdataReady\n",
+        "\n",
+        "#Get the data by reading it into the notebook\n",
+        "Bute = pd.read_csv(\"https://raw.githubusercontent.com/anniewildman/Hello-GIS/master/Canmore-download-Mon%2C%2004%20Nov%202019%2010_10_35%20%2B0000.csv_.csv\")\n",
+        "\n",
+        "Bute.head()"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/html": [
+              "<div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>40291</th>\n",
+              "      <th>NS05SE 4</th>\n",
+              "      <th>Bute, Dunagoil</th>\n",
+              "      <th>Fort (Prehistoric), Axehead (Stone), Mould (Clay), Ring (Bronze)</th>\n",
+              "      <th>208479</th>\n",
+              "      <th>653127</th>\n",
+              "      <th>ARGYLL AND BUTE</th>\n",
+              "      <th>BUTESHIRE</th>\n",
+              "      <th>KINGARTH</th>\n",
+              "      <th>NS 08479 53127</th>\n",
+              "      <th>http://canmore.org.uk/site/40291</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>23082</td>\n",
+              "      <td>NM84SE 1</td>\n",
+              "      <td>Lismore, Tirefour Castle</td>\n",
+              "      <td>Broch (Iron Age)</td>\n",
+              "      <td>186755</td>\n",
+              "      <td>742912</td>\n",
+              "      <td>ARGYLL AND BUTE</td>\n",
+              "      <td>ARGYLL</td>\n",
+              "      <td>LISMORE AND APPIN (ARGYLL AND BUTE)</td>\n",
+              "      <td>NM 86755 42912</td>\n",
+              "      <td>http://canmore.org.uk/site/23082</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>21997</td>\n",
+              "      <td>NM42NW 1</td>\n",
+              "      <td>Burg, Dun Bhuirg, Mull</td>\n",
+              "      <td>Broch (Iron Age)(Possible), Dun (Period Unassi...</td>\n",
+              "      <td>142170</td>\n",
+              "      <td>726240</td>\n",
+              "      <td>ARGYLL AND BUTE</td>\n",
+              "      <td>ARGYLL</td>\n",
+              "      <td>KILFINICHEN AND KILVICKEON</td>\n",
+              "      <td>NM 4217 2624</td>\n",
+              "      <td>http://canmore.org.uk/site/21997</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>39160</td>\n",
+              "      <td>NR79SE 1</td>\n",
+              "      <td>Druim An Duin</td>\n",
+              "      <td>Dun (Period Unassigned)</td>\n",
+              "      <td>178110</td>\n",
+              "      <td>691300</td>\n",
+              "      <td>ARGYLL AND BUTE</td>\n",
+              "      <td>ARGYLL</td>\n",
+              "      <td>NORTH KNAPDALE</td>\n",
+              "      <td>NR 7811 9130</td>\n",
+              "      <td>http://canmore.org.uk/site/39160</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>39349</td>\n",
+              "      <td>NR86SW 4</td>\n",
+              "      <td>Dun A' Choin Duibh</td>\n",
+              "      <td>Dun (Prehistoric)</td>\n",
+              "      <td>180430</td>\n",
+              "      <td>664070</td>\n",
+              "      <td>ARGYLL AND BUTE</td>\n",
+              "      <td>ARGYLL</td>\n",
+              "      <td>SOUTH KNAPDALE</td>\n",
+              "      <td>NR 8043 6407</td>\n",
+              "      <td>http://canmore.org.uk/site/39349</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>42841</td>\n",
+              "      <td>NS43SE 5</td>\n",
+              "      <td>Lochlea</td>\n",
+              "      <td>Crannog (Period Unassigned), Armlet, Bead, Bow...</td>\n",
+              "      <td>245750</td>\n",
+              "      <td>630270</td>\n",
+              "      <td>SOUTH AYRSHIRE</td>\n",
+              "      <td>AYRSHIRE</td>\n",
+              "      <td>TARBOLTON</td>\n",
+              "      <td>NS 4575 3027</td>\n",
+              "      <td>http://canmore.org.uk/site/42841</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>"
+            ],
+            "text/plain": [
+              "   40291  NS05SE 4  ...  NS 08479 53127  http://canmore.org.uk/site/40291\n",
+              "0  23082  NM84SE 1  ...  NM 86755 42912  http://canmore.org.uk/site/23082\n",
+              "1  21997  NM42NW 1  ...    NM 4217 2624  http://canmore.org.uk/site/21997\n",
+              "2  39160  NR79SE 1  ...    NR 7811 9130  http://canmore.org.uk/site/39160\n",
+              "3  39349  NR86SW 4  ...    NR 8043 6407  http://canmore.org.uk/site/39349\n",
+              "4  42841  NS43SE 5  ...    NS 4575 3027  http://canmore.org.uk/site/42841\n",
+              "\n",
+              "[5 rows x 11 columns]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 6
+        }
+      ]
+    }
+  ]
+}
